@@ -1,0 +1,14 @@
+{% extends "first_app/base.html" %}
+{% block body_block %}
+
+
+
+      <div class="jumbotron">
+        <form method="POST">
+          {{ form }}
+          {% csrf_token %}
+          <input type="submit" class="btn btn-primary" value="submit" method='POST'>
+        </form>
+      </div>
+
+{% endblock %}
